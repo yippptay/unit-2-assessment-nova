@@ -15,8 +15,5 @@ app.engine("jsx", require("express-react-views").createEngine());
 // controllers
 app.use("/todos", todo);
 
-// models
-const todos = require("./models/todos.js");
-
 // listen
 app.listen(PORT, () => show("listening on port", PORT));
