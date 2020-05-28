@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/ser5chI.png">
 
 # Project 2 Assessment
- Fork and clone [__this repo __](https://github.com/arthurbernierjr/unit-2-assesment-nova/) somewhere on your computer 
+ Fork and clone [__this repo__](https://github.com/arthurbernierjr/unit-2-assesment-nova/) somewhere on your computer 
 
 ### GOAL
 
