@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/ser5chI.png">
 
 # Project 2 Assessment
-
+ Fork and clone [__this repo __](https://github.com/arthurbernierjr/unit-2-assesment-nova/) somewhere on your computer 
 
 ### GOAL
 
@@ -150,20 +150,22 @@ form {
 
 Follow these steps to deploy your app:
 
-- Create a local repository: `$ git init`
+- This repo should have been forked and cloned to a location on your computer
 
-- Create the first commit: `$ git add -A` then `$ git commit -m "Initial commit"`
+- Create the first commit: `$ git add -A` then `$ git commit -m "Submit Project"`
 
 - Create a remote link to Heroku: `$ heroku create`
+- Don't forget to add MLAB to your heroku application by provisioning it as an add by logging in to heroku on the brwser and updating your application add ons if you used Mongoose instead of hard coded data
 
 - Deploy: `$ git push heroku master`
 
 - Test the application: `$ heroku open`
 
+
 > It may take a minute for the application to become functional on Heroku.
 
 **Slack the deployed app's link to your instructors in the resources channel. Congrats, you are done!**
 
-**If you cant get heroku to work, upload this project to a github repo and send us the repo.
+**If you cant get heroku to work, send us your repo that works locally.
 
 
