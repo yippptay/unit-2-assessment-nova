@@ -3,17 +3,28 @@ const todo = express.Router();
 const todos = require("../models/todos.js");
 const show = console.log;
 
-// INDEX route
+// Index
 todo.get("/", (req, res) => {
-  show("got it");
+  show("INDEX");
+  show("todos", todos);
   res.render("Index", {
     todos,
   });
 });
 
-// NEW route
+// Create
 todo.post("/new", (req, res) => {
-  todos.push(req.body);
+  show("CREATE");
+  const { todo } = req.body;
+  const done = false;
+  todos.push({ todo, done });
+  res.redirect("/todos");
+});
+
+// Delete
+todo.delete("/:index", (req, res) => {
+  const { index } = req.body;
+  todos.splice(index, 1);
   res.redirect("/todos");
 });
 
