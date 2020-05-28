@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 const methodOverride = require("method-override");
 const todo = require("./controllers/todo.js");
-const PORT = 3000;
+require("dotenv").config();
+const { PORT = 3000 } = process.env;
 const show = console.log;
 
 // middleware
@@ -14,6 +15,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 
 // controllers
 app.use("/todos", todo);
+app.get("/", (req, res) => res.redirect("/todos"));
 
 // listen
 app.listen(PORT, () => show("listening on port", PORT));
